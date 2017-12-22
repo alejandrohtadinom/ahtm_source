@@ -1,0 +1,1 @@
+$("#contact-form").submit(function(e){var a=$("#name"),t=$("#email"),o=($("#subject"),$("#message"));a.value&&t.value&&o.value?($.ajax({url:"https://formspree.io/alejandrohtadinom@gmail.com",method:"POST",data:$(this).serilize(),dataType:"json"}),e.preventDefault(),$(this).get(0).reset()):console.log("Error")});

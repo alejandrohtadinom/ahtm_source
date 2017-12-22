@@ -1,0 +1,12 @@
+section.section-contact
+    .container
+        h2.page-subtitle contacto
+        .contact-container
+            form#contact-form
+                input#name.form(type="text" name="name" placeholder="Nombre")
+                input#email.form(type="email" name="_replyto" placeholder="Correo")
+                textarea#message.form(name="message" placeholder="mensaje")
+                .contact-btn-container
+                    input#submit.btn(type="submit" value="Enviar")
+                    input#submit.btn(type="reset" value="Reset")
+                    input#subject(type="hidden" name="_subject" value="New submission!")
