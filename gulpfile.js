@@ -70,7 +70,7 @@ gulp.task('imgMin', function () {
         imagemin.optipng({optimizationLevel: 5}),
         imagemin.svgo({plugins: [{removeViewBox: true}]})
     ]))
-    .pipe(gulp.dest('dist/img/'));
+    .pipe(gulp.dest('dist/assets/img/'));
 });
 
 /*********** BrowserSync Serve ***********/

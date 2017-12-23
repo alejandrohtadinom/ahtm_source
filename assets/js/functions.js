@@ -1,14 +1,3 @@
-/*
-TODO:
-Add form functions
-$.ajax({
-    url: "https://formspree.io/you@email.com",
-    method: "POST",
-    data: {message: "hello!"},
-    dataType: "json"
-});
-*/
-
 $('#contact-form').submit(function (e) {
     var name = $('#name'),
         email = $('#email'),
@@ -26,5 +15,25 @@ $('#contact-form').submit(function (e) {
     });
         e.preventDefault();
         $(this).get(0).reset();
+    }
+});
+
+
+/*
+ *Scroll animations:
+ */
+
+sectionAbout = $('.section-about');
+cards = sectionAbout.find('.card-container');
+card = cards.find('.card');
+
+$(window).scroll(function () {
+    wScroll = $(this).scrollTop();
+
+    if (wScroll > (cards.offset().top / 2)) {
+        card.css({
+            'transform': 'translateY(0)',
+            'opacity': 1
+        });
     }
 });
