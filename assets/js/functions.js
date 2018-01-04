@@ -1,3 +1,5 @@
+// AJAX Form:
+
 $('#contact-form').submit(function (e) {
     var name = $('#name'),
         email = $('#email'),
@@ -18,10 +20,7 @@ $('#contact-form').submit(function (e) {
     }
 });
 
-
-/*
- *Scroll animations:
- */
+// Animations:
 
 sectionAbout = $('.section-about');
 cards = sectionAbout.find('.card-container');
