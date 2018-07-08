@@ -1,0 +1,17 @@
+mixin job(place, title, attr, date)
+    .job-list
+        h2.cv-title= title
+        p.cv-place= place
+        p.cv-attr= attr
+        span.cv-date= date
+
+
+section.section-resume
+    .container
+        .col-2.middle
+            .resume
+                +job("mar de la ceramica", "coordinador de tecnologias", "coordinar tecnologias?", "09-17")
+                +job("ClicNovo", "Desarrollador web", "Desarrollar aplicaciones web y campañas publicitarias", "00-00")
+                +job("Castillo Rondon", "Asesor de tecnologias", "Asesoramiento del uso de tecnologias", "00-00")
+                +job("latoncar", "Asesor tecnico", "Asesor tecnologias", "00-00")
+                +job("ceujap", "asesor", "ceujap", "00-00")
