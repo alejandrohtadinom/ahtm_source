@@ -2,16 +2,17 @@ mixin job(place, title, attr, date)
     .job-list
         h2.cv-title= title
         p.cv-place= place
+        time.cv-date(datetime=date)= date
         p.cv-attr= attr
-        span.cv-date= date
 
 
 section.section-resume
     .container
-        .col-2.middle
-            .resume
-                +job("mar de la ceramica", "coordinador de tecnologias", "coordinar tecnologias?", "09-17")
-                +job("ClicNovo", "Desarrollador web", "Desarrollar aplicaciones web y campañas publicitarias", "00-00")
-                +job("Castillo Rondon", "Asesor de tecnologias", "Asesoramiento del uso de tecnologias", "00-00")
-                +job("latoncar", "Asesor tecnico", "Asesor tecnologias", "00-00")
-                +job("ceujap", "asesor", "ceujap", "00-00")
+        .row
+            .col-xs-12.col-sm-12.col-md-8.col-md-offset-2.col-lg-8.col-lg-offset-2
+                .resume
+                    +job("el mar de la ceramica", "coordinador de tecnologias", "Coordinar el uso y mantenimiento de las herraminetas TIC, Mantener y administrar los servidores de bases de datos, dominios y politas de grupos aparte del desarrollo de aplicaciones para la optimizacion y puesta a punto de inventarios, procesos de compra y ventas.", "09-17")
+                    +job("ClicNovo", "Asesor / Desarrollador Web", "Desarrollar aplicaciones web y campañas publicitarias efectivas para diversos clientes, asesorar en el uso de estrategias digitales de mercadeo con el fin de incrementar el alcance de las campañas, coordinar y supervisar el diseño de los banners publicitarios, apoyar a los asesores de ventas en la negociacion de los servicios de la empresa", "00-00")
+                    +job("Castillo Rendon", "Asesor de tecnologias", "Asesorar a los clientes en el uso de sistemas administrativos y contables (ERP, S.A.P), asi como la puesta a punto de sistemas de ventas y cierres de negociacion con el cliente final", "00-00")
+                    +job("latoncar", "Supervisor de almacen", "Supervisar el inventario disponible, entrada y salida de materiales, agilizar el proceso de entrega de vehiculos y acelerar la cadena de produccion", "00-00")
+                    +job("centro de extencion UJAP - CEUJAP", "asesor", "ceujap", "00-00")

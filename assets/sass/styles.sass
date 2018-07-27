@@ -1,49 +1,67 @@
-@import 'vars'
-@import 'tools'
-
-.spacer
-    width: 100vw
-    height: 150vh
-
-// RESET----------
 *
-    box-sizing: border-box
     margin: 0
     padding: 0
-    font-family: 'Helvetica', sans-serif
+    box-sizing: border-box
 
-img
+body
+    font-family: Helvetica,Arial,sans-serif
+
+.container-outer
     width: 100%
-    height: auto
 
-// HEADER----------
-header
+.main-header
     background: url('/assets/img/header-bg.jpg')
-        size: cover
-        attachment: fixed
+    background-size: cover
+    background-attachment: fixed
+    color: #FAFAFA
 
-    .header-container
-        background: linear-gradient(rgba(#212121, .5), rgba(#212121, .8))
-        height: 100vh
+    .container-outer
+        text-align: center
+        background: linear-gradient(rgba(#212121, 0), rgba(#212121, 1))
+
+    .row
         width: 100%
-        flex-direction: column
+        height: 100vh
         align-items: center
-        justify-content: center
-        color: $text_w
+        justify-content: space-around
 
-// About Me----------
 .section-aboutme
-
-    .profile-bio
-        position: relative
-        top: -2rem
-        color: $text_light
-        margin: 0 2rem
-        padding: 1rem
-        border-radius: 1%
-        background-color: #FAFAFA
-        box-shadow: 4px 4px 4px 4px rgba(#222, .4)
+    height: 50vh
 
 .section-resume
-    background-color: pink
+    padding: 3rem 0
+    color: #444
 
+    .resume
+        background-color: #CCC
+        padding: 1.6rem
+        border-radius: .3em
+
+        .job-list
+            text-align: center
+
+            .cv-title
+                text-transform: uppercase
+                margin-top: 2rem
+
+                &:after
+                    content: ''
+                    display: block
+                    margin: .4rem auto
+                    width: 30%
+                    height: 1px
+                    background-color: #212121
+
+            .cv-date,
+            .cv-place
+                display: inline-block
+
+            .cv-place
+                text-transform: lowercase
+                font-weight: bold
+
+            .cv-date
+                margin: 0 .5em
+
+            .cv-attr
+                text-align: justify

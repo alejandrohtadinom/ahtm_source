@@ -1,38 +1,28 @@
 // AJAX Form:
-
 $('#contact-form').submit(function (e) {
-    var name = $('#name'),
-        email = $('#email'),
-        subject = $('#subject'),
-        message = $('#message');
 
+    // Get the form elements:
+    var name = $('#name'), // Name
+        email = $('#email'), // Email direction
+        subject = $('#subject'), // Subject dropdown
+        message = $('#message'); // Message body
+
+    // Form validation:
     if (!name.value || !email.value || !message.value) {
+
+        // Error handling:
         console.log("Error");
+
     } else {
+        // Ajaxify the form
         $.ajax({
-        url: "https://formspree.io/alejandrohtadinom@gmail.com",
-        method: "POST",
-        data: $(this).serilize(),
-        dataType: "json"
+        url: "https://formspree.io/alejandrohtadinom@gmail.com", // Server handler
+        method: "POST", // Method
+        data: $(this).serilize(), // Data
+        dataType: "json" // Data type
     });
-        e.preventDefault();
-        $(this).get(0).reset();
+        e.preventDefault(); // Prevent the page reload after submition
+        $(this).get(0).reset(); // Reset the form values
     }
 });
 
-// Animations:
-
-sectionAbout = $('.section-about');
-cards = sectionAbout.find('.card-container');
-card = cards.find('.card');
-
-$(window).scroll(function () {
-    wScroll = $(this).scrollTop();
-
-    if (wScroll > (cards.offset().top / 2)) {
-        card.css({
-            'transform': 'translateY(0)',
-            'opacity': 1
-        });
-    }
-});
