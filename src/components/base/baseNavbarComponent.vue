@@ -1,25 +1,25 @@
 <template>
-    <div class="navbar">
-        <nav>
-            <ul>
-                <li>
-                    <a href="">Home</a>
-                </li>
-                <li>
-                    <a href="">Servicios</a>
-                </li>
-                <li>
-                    <a href="">Sobre mi</a>
-                </li>
-                <li>
-                    <a href="">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
+  <div class="navbar">
+    <nav>
+      <ul>
+        <li>
+          <router-link to="/">Home</router-link>
+        </li>
+        <li>
+          <router-link to="service">Servicios</router-link>
+        </li>
+        <li>
+          <router-link to="about">Sobre mi</router-link>
+        </li>
+        <li>
+          <router-link to="contact">Contacto</router-link>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </template>
 <script>
-    export defautl {
-
-    }
+	export default {
+		name: 'navbar'
+	}
 </script>
