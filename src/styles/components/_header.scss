@@ -1,0 +1,50 @@
+.header-container {
+	background: linear-gradient(rgba($dark-blue, 0.8), rgba($dark-blue, 1)), url('~@/assets/img/header-bg.jpg');
+	background-position: center;
+	background-size: cover;
+	//background-attachment: fixed;
+	height: 90vh;
+	display: flex;
+	justify-content: center;
+	
+	.header-content {
+		align-self: center;
+		text-align: center;
+		color: $primary-white;
+		
+		.page-title {
+			font-weight: 900;
+			font-size: 4em;
+			
+			&:after {
+				content: '';
+				margin: 1rem auto;
+				width: 60%;
+				height: 1px;
+				display: block;
+				background-color: $primary-white;
+			}
+		}
+		
+		.tag-line {
+			font-weight: 300;
+		}
+
+		.cta-container {
+			display: flex;
+			justify-content: center;
+
+			.cta {
+				margin: 1rem;
+				padding: 1rem 1.5rem;
+				background-color: #fff;
+				border-radius: .6rem;
+
+				&:last-child {
+					color: $primary-white;
+					background: linear-gradient(-35deg, $primary-blue, $primary-blue-light);
+				}
+			}
+		}
+	}
+}

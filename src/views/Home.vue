@@ -1,10 +1,13 @@
 <template>
   <div class="home">
-    <header>
-      <div class="header-container">
-        <h1>Alejandro H Tadino M</h1>
-        <h3>tag line</h3>
-        <a href="/about">Sobre mi</a><a href="/contact">Contacto</a>
+    <header class="header-container">
+      <div class="header-content">
+        <h1 class="page-title">Alejandro H Tadino M</h1>
+        <h3 class="tag-line">Programmer // Developer // Thinker</h3>
+        <div class="cta-container">
+          <a class="cta" href="/about">Sobre mi</a>
+          <a class="cta" href="/contact">Contacto</a>
+        </div>
       </div>
     </header>
     <main>
