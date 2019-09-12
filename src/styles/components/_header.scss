@@ -1,5 +1,5 @@
 .header-container {
-	height: 110vh;
+	min-height: 110vh;
 	width: 100%;
 
 	.header-rect {
@@ -19,18 +19,13 @@
 		height: 60%;
 		text-align: center;
 		background-color: $primary-red;
-		position: relative;
+		position: absolute;
 		left: 12.5%;
 		top: 10%;
 		color: $primary-white;
 		display: flex;
 		justify-content: center;
-
-		//shadow
-
-		box-shadow: rgba(63, 63, 63, 0.349) 0 0 64px -8px;
-
-		// Border
+		box-shadow: 0 0 6rem rgba(16, 14, 23, 0.70);
 
 		&:before {
 			content: '';
@@ -60,8 +55,8 @@
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
-
 		color: $primary-white;
+		box-shadow: 0 0 6rem rgba(16, 14, 23, 0.70);
 
 		.tag-line {
 			font-weight: 300;
@@ -84,5 +79,33 @@
 				}
 			}
 		}
+	}
+
+	.header-rect-small {
+		position: absolute;
+		width: 10%;
+		height: 10%;
+		background-color: pink;
+		filter: blur(5px);
+	}
+
+	.header-rect-small-1 {
+		top: 25%;
+		left: 50%;
+	}
+
+	.header-rect-small-2 {
+		top: 10%;
+		right: 20%;
+	}
+
+	.header-rect-small-3 {
+		top: 50%;
+		left: 20%;
+	}
+
+	.header-rect-small-4 {
+		top: 5%;
+		left: 10%;
 	}
 }

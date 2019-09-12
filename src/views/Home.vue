@@ -2,6 +2,10 @@
 	<div class="home">
 		<header class="header-container">
 			<div class="header-rect"></div>
+			<div class="header-rect-small header-rect-small-1"></div>
+			<div class="header-rect-small header-rect-small-2"></div>
+			<div class="header-rect-small header-rect-small-3"></div>
+			<div class="header-rect-small header-rect-small-4"></div>
 			<div class="header-sub">
 				<h3 class="tag-line">Programmer // Developer // Thinker</h3>
 				<div class="cta-container">
@@ -14,41 +18,55 @@
 			</div>
 		</header>
 		<main>
-			<section id="service">
-				<div class="card">
+			<section id="products">
+				<div class="product">
+					<img src="@/assets/img/svg/004-startup.svg" alt="">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam itaque minus, nulla ducimus totam tenetur quos eveniet sequi praesentium pariatur quasi, odio, recusandae obcaecati quo aliquid eaque vero incidunt accusantium!</p>
+				</div>
+				<div class="product">
+					<img src="@/assets/img/svg/012-laptop-1.svg" alt="">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut nihil voluptatibus voluptas debitis autem amet ipsam laboriosam quibusdam quaerat ipsum. Quos voluptatem laborum labore natus dicta, debitis quis, cum veritatis.</p>
+				</div>
+				<div class="product">
+					<img src="@/assets/img/svg/006-user.svg" alt="">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente assumenda architecto optio quibusdam, accusamus quidem voluptatem quasi suscipit consectetur ipsa illo dolorem laboriosam minus. Vitae earum impedit dolorum quia repellat.</p>
+				</div>
+			</section>
+			<section id="services">
+				<div class="service">
 					<figure>
 						<img src="@/assets/img/card-1.jpg" alt="Photo by Carlos Muza on Unsplash">
 						<figcaption>
-							<h3 class="card-tag">Poscionamiento en la Web</h3>
+							<h3 class="service-tag">Poscionamiento en la Web</h3>
 							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, perspiciatis vitae corrupti possimus, itaque praesentium laborum beatae nulla dolorem porro ab repellendus numquam. Repellendus aperiam animi ducimus suscipit. Excepturi, cupiditate!</p>
 						</figcaption>
 					</figure>
 				</div>
-				<div class="card">
+				<div class="service">
 					<figure>
 						<img src="@/assets/img/card-2.jpg" alt="">
 						<figcaption>
-							<h3 class="card-tag">Diseño de aplicaciones</h3>
+							<h3 class="service-tag">Diseño de aplicaciones</h3>
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quas eveniet cupiditate ullam, doloribus, modi voluptatum molestiae repellat voluptatem perspiciatis recusandae nobis laborum dolor velit fugiat debitis omnis nihil obcaecati.</p>
 						</figcaption>
 					</figure>
 				</div>
-				<div class="card">
+				<div class="service">
 					<figure>
-						<img src="" alt="">
+						<img src="@/assets/img/card-3.jpg" alt="">
 						<figcaption>
-							<h3 class="card-tag">tu blog a tu manera</h3>
+							<h3 class="service-tag">tu blog a tu manera</h3>
 							<p>
 								Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi nulla fuga nostrum explicabo voluptate. Vel, assumenda incidunt numquam repudiandae eum dolores esse quasi fugiat laudantium soluta non, debitis eius inventore.
 							</p>
 						</figcaption>
 					</figure>
 				</div>
-				<div class="card">
+				<div class="service">
 					<figure>
-						<img src="" alt="">
+						<img src="@/assets/img/card-4.jpg" alt="">
 						<figcaption>
-							<h3 class="card-tag">tu tienda oline ya</h3>
+							<h3 class="service-tag">tu tienda oline ya</h3>
 							<p>
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo hic quam nesciunt quasi rerum assumenda commodi accusamus inventore modi! Laboriosam, in nam consectetur ut pariatur voluptates quibusdam culpa harum quis!
 							</p>

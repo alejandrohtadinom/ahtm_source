@@ -1,9 +1,40 @@
-#service {
-	background: pink;
+#services {
+	width: 100%;
+	background-color: $primary-white;
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+	justify-content: space-evenly;
 
-	.card {
-		width: 20%;
+	.service {
+		width: 80%;
+		margin: 4rem;
+
+		&:nth-child(odd) {
+			img {
+				order: 1;
+			}
+
+			figcaption {
+				margin: 3rem -4rem 0 0;
+				z-index: 2;
+				background-color: $primary-blue;
+				height: 100%;
+				color: $primary-white;
+			}
+		}
+
+		figure {
+			display: flex;
+
+			img {
+				width: 50%;
+			}
+
+			figcaption {
+				padding: 1rem;
+				border-radius: .4rem;
+				box-shadow: 0 0 6rem $shadow;
+			}
+		}
 	}
 }
