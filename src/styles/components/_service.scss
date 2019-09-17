@@ -17,7 +17,17 @@
 			figcaption {
 				margin: 3rem -4rem 0 0;
 				z-index: 2;
-				background-color: $primary-blue;
+				background: linear-gradient(45deg, $primary-blue, $primary-blue-light);
+				height: 100%;
+				color: $primary-white;
+			}
+		}
+
+		&:nth-child(even) {
+			figcaption {
+				margin: 3rem 0 0 -4rem;
+				z-index: 2;
+				background: linear-gradient(-45deg, $primary-red, $primary-orange);
 				height: 100%;
 				color: $primary-white;
 			}
@@ -27,7 +37,8 @@
 			display: flex;
 
 			img {
-				width: 50%;
+				width: 70%;
+				box-shadow: 0 0 6rem $shadow;
 			}
 
 			figcaption {

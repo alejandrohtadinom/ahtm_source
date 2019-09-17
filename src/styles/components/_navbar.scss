@@ -21,7 +21,7 @@
         margin: .2rem auto;
         width: 0%;
         height: 2px;
-        background: $primary-blue;
+        background: linear-gradient(90deg, $primary-orange, $primary-red);
         transition: all ease-in-out .2s;
     }
 
